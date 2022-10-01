@@ -14,4 +14,8 @@ class Mobil extends Kendaraan
         'kapasitas_penumpang',
         'tipe',
     ];
+
+    public function kendaraan(){
+        return $this->hasMany(Kendaraan::class);
+    }
 }

@@ -14,4 +14,8 @@ class Motor extends Kendaraan
         'tipe_suspensi',
         'tipe_transmisi',
     ];
+
+    public function kendaraan(){
+        return $this->hasMany(Kendaraan::class);
+    }
 }
